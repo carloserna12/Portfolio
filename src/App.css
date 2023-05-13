@@ -418,7 +418,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 5px;
 }
 .proj-imgbx::before {
   content: "";
@@ -619,22 +619,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 .tech {
+  width: 100%;
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgb(54 127 170 / 50%) -5.91%, rgb(20 33 191 / 50%) 111.58%);
   font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
+  margin-bottom: 5px;
+  display: inline-flex;
   margin-left: 2px;
   border-radius: 10px;
-}
-
-.tech::after {
-  content: "\2192"; /* código unicode de la flecha hacia la derecha */
-  margin-left: 5px; /* ajusta el espacio entre el texto y el icono */
+  margin-right:4px;
+  padding-top: 5px;
 }
 
 .tech-container {
   position: relative;
+  width: 50%;
+  padding-right: 10px;
+}
+.tech-icon {
+  margin-right: 4px;
+  width: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.tecn-container{
+  display:flex;
+  flex-wrap:wrap;
 }

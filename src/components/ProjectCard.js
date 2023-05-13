@@ -1,6 +1,23 @@
 import { Col } from "react-bootstrap";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngular, faBootstrap, faCss3, faHtml5, faJava, faJs, faNode, faNodeJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase, faLeaf, faServer } from "@fortawesome/free-solid-svg-icons";
 export const ProjectCard = ({ title, description, imgUrl,tecn }) => {
+  const iconos = {
+    "Java": faJava,
+    "Python": faPython,
+    "JS": faJs,
+    "SQL":faDatabase,
+    "Node":faNodeJs,
+    "Angular":faAngular,
+    "Boostrap":faBootstrap,
+    "CSS":faCss3,
+    "HTML":faHtml5,
+    "React":faReact,
+    "Api-rest":faServer,
+    "Springboot":faLeaf,
+    // Agrega más íconos según sea necesario
+  };
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
@@ -10,11 +27,13 @@ export const ProjectCard = ({ title, description, imgUrl,tecn }) => {
           <span>{description}</span>
         </div>
       </div>
+      <div className="tecn-container">
       {tecn.map((item, index) => (
-        <span key={index} className="tech-container">
-          <span className="tech">{item}</span>
-        </span>
-      ))}
+          <span key={index} className="tech-container">
+            <span className="tech"> <FontAwesomeIcon icon={iconos[item]} className="tech-icon" /> {item}</span>
+          </span>
+        ))}
+      </div>
     </Col>
     
   )

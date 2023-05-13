@@ -14,7 +14,7 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
-      tecn:["Java","Python"],
+      tecn:["Java","Python","JS","Springboot"],
     },
     {
       title: "Business Startup",
@@ -27,6 +27,18 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg1,
       tecn:["Java","Python"],
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg1,
+      tecn:["Java","Python","JS","SQL"],
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg1,
+      tecn:["JS","Springboot","SQL"],
     },
     
   ];
