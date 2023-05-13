@@ -618,3 +618,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+.tech {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgb(54 127 170 / 50%) -5.91%, rgb(20 33 191 / 50%) 111.58%);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  margin-left: 2px;
+  border-radius: 10px;
+}
+
+.tech::after {
+  content: "\2192"; /* código unicode de la flecha hacia la derecha */
+  margin-left: 5px; /* ajusta el espacio entre el texto y el icono */
+}
+
+.tech-container {
+  position: relative;
+}

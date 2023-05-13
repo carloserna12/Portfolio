@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, imgUrl }) => {
+export const ProjectCard = ({ title, description, imgUrl,tecn }) => {
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
@@ -10,6 +10,12 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
           <span>{description}</span>
         </div>
       </div>
+      {tecn.map((item, index) => (
+        <span key={index} className="tech-container">
+          <span className="tech">{item}</span>
+        </span>
+      ))}
     </Col>
+    
   )
 }
