@@ -1,8 +1,8 @@
 import { Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngular, faBootstrap, faCss3, faHtml5, faJava, faJs, faNode, faNodeJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faLeaf, faServer } from "@fortawesome/free-solid-svg-icons";
-export const ProjectCard = ({ title, description, imgUrl,tecn }) => {
+import { faAngular, faBootstrap, faCss3, faGithub, faHtml5, faJava, faJs, faNode, faNodeJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase, faEarthAmerica, faLeaf, faServer } from "@fortawesome/free-solid-svg-icons";
+export const ProjectCard = ({ title, description, imgUrl,tecn,urlGit,urlWeb }) => {
   const iconos = {
     "Java": faJava,
     "Python": faPython,
@@ -16,6 +16,7 @@ export const ProjectCard = ({ title, description, imgUrl,tecn }) => {
     "React":faReact,
     "Api-rest":faServer,
     "Springboot":faLeaf,
+    "Firebase":faDatabase,
     // Agrega más íconos según sea necesario
   };
   return (
@@ -24,7 +25,9 @@ export const ProjectCard = ({ title, description, imgUrl,tecn }) => {
         <img src={imgUrl} />
         <div className="proj-txtx">
           <h4>{title}</h4>
-          <span>{description}</span>
+          <span>{description}</span><br></br>
+          <button onClick={() => window.open(urlGit)} className="btn-git"><FontAwesomeIcon icon={faGithub}  /><span className="btn-git-style">GitHub </span></button>
+          <button onClick={() => window.open(urlWeb)} className="btn-git"><FontAwesomeIcon icon={faEarthAmerica}  /><span className="btn-git-style"> Web</span></button>
         </div>
       </div>
       <div className="tecn-container">

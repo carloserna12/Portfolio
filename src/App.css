@@ -389,7 +389,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, rgb(54 127 170 / 50%) -5.91%, rgb(20 33 191 / 50%) 111.58%);
+    /*background: linear-gradient(90.21deg, rgb(54 127 170 / 50%) -5.91%, rgb(20 33 191 / 50%) 111.58%);*/
+    background: linear-gradient(90.21deg, rgba(253, 249, 0, 0.616) -5.91%, rgba(191, 131, 20, 0.5) 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -620,23 +621,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .tech {
   width: 100%;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgb(54 127 170 / 50%) -5.91%, rgb(20 33 191 / 50%) 111.58%);
-  font-size: 20px;
+  padding: 3px 10px;
+  background: linear-gradient(90.21deg, rgba(253, 249, 0, 0.616) -5.91%, rgba(191, 131, 20, 0.5) 111.58%);
   margin-bottom: 5px;
   display: inline-flex;
   margin-left: 2px;
   border-radius: 10px;
   margin-right:4px;
-  padding-top: 5px;
+  
 }
 
 .tech-container {
   position: relative;
   width: 50%;
-  padding-right: 10px;
+  padding-right: 3px;
 }
 .tech-icon {
   margin-right: 4px;
@@ -649,4 +647,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .tecn-container{
   display:flex;
   flex-wrap:wrap;
+}
+
+.btn-git-style {
+  font-weight: 700 !important;
+  font-size: 15px;
 }
