@@ -2,7 +2,7 @@ import { Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngular, faBootstrap, faCss3, faGithub, faHtml5, faJava, faJs, faNode, faNodeJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faEarthAmerica, faLeaf, faServer } from "@fortawesome/free-solid-svg-icons";
-export const ProjectCard = ({ title, description, imgUrl,tecn,urlGit,urlWeb }) => {
+export const ProjectCard = ({ title, description, imgUrl,tecn,urlGit,urlWeb,status }) => {
   const iconos = {
     "Java": faJava,
     "Python": faPython,
