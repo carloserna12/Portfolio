@@ -5,6 +5,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -58,7 +59,11 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Carlos`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Software Developer", "Backend Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I am a skilled web developer in both backend and frontend, responsible and proactive, looking for opportunities to grow and learn in technology. I am ready to contribute to the growth and success of your company!</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <a href="#connect" style={{ textDecoration: 'none' }}>
+                    <button onClick={() => {}}>
+                      Let’s Connect <ArrowRightCircle size={25} />
+                    </button>
+                  </a>
               </div>}
             </TrackVisibility>
           </Col>
@@ -66,14 +71,13 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBDtp3e.img?h=0&w=600&m=6&q=60&u=t&o=f&l=f&x=339&y=203" alt="Header Img"/>
-                  {//<img src={headerImg} alt="Header Img"/>
-                  }
+                  <img src={headerImg} alt="Header Img" class="background-image" />
                 </div>}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
+    
   )
 }
