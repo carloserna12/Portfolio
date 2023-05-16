@@ -35,7 +35,18 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>About me</h2>
-                        <p>My experience in web development has allowed me to acquire skills in various areas.<br></br>Check out some of them below. "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula mauris ac purus consectetur, id dignissim lectus egestas. Vestibulum consequat auctor lacus, ut finibus massa eleifend nec. Curabitur bibendum, mi a sollicitudin pulvinar, orci risus consectetur ex, ac aliquet nisi mi sed urna. Nullam a tortor sit amet nisi rutrum luctus et id felis. Proin eu sem a turpis efficitur lacinia a sed elit. Phasellus venenatis ex eu pulvinar congue. Mauris accumsan lorem quis elit finibus condimentum. Etiam nec lacus in urna placerat venenatis eget a odio. Donec euismod tortor a ex dapibus fermentum. Sed luctus elit quis lobortis aliquet. Cras consequat tristique est, id rutrum ligula faucibus vitae. Fusce interdum consectetur aliquet. Nam sed sagittis quam. Vivamus efficitur ultricies odio sit amet lobortis."
+                        <p>I am Carlos, a systems engineer and multimedia producer with a strong background in software development. As a passionate developer, I not only focus on writing clean and efficient code, but I also value the adoption of good programming practices.
+                        
+                        
+                        I have experience in implementing scalable and modularized architectures, allowing me to build robust and flexible systems. Additionally, I am familiar with a wide range of design patterns, enabling me to tackle complex problems in a structured and efficient manner.
+                        </p>
+                        <p>
+                        I understand the importance of staying up to date with the latest trends and advancements in the software development industry. I am always seeking opportunities to enhance my skills and learn new technologies that can boost my abilities as a developer.
+                        
+                        I am committed to excellence and delivering quality solutions. I believe in effective communication, teamwork, and close collaboration with clients and colleagues to achieve exceptional results.
+                        </p>
+                        <p>
+                        If you are looking for someone who is a skilled software developer capable of applying best practices, implementing solid architectures, and utilizing effective design patterns, feel free to contact me. I am excited to take on new challenges and contribute to the success of your projects.
                         </p>
                         {/*<Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">

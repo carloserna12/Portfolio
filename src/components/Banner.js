@@ -55,7 +55,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+              <div className={"animate__animated animate__fadeIn"}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Carlos`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Software Developer", "Backend Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I am a skilled web developer in both backend and frontend, responsible and proactive, looking for opportunities to grow and learn in technology. I am ready to contribute to the growth and success of your company!</p>
@@ -70,7 +70,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div className={"animate__animated animate__zoomIn"}>
                   <img src={headerImg} alt="Header Img" class="background-image" />
                 </div>}
             </TrackVisibility>

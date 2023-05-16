@@ -282,7 +282,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+  animation: updown 6s linear infinite;
 }
 @keyframes updown {
     0% {
@@ -321,7 +321,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px 0 75px 0;
+    margin: 14px 0 25px 0;
 }
 .skill-slider {
   width: 80%;
@@ -650,7 +650,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display:flex;
   flex-wrap:wrap;
 }
-
+.btn-git{
+  padding: 0 10px 0 10px;
+}
 .btn-git-style {
   font-weight: 700 !important;
   font-size: 15px;
