@@ -1,5 +1,8 @@
 import projImg1 from "../assets/img/project-img1.png";
-import projImg_1 from "../assets/img/project-img-1.png"
+import projImg_1 from "../assets/img/project-img-1.png";
+import pokebattle from "../assets/img/PokeBattle.png";
+import geogamification from "../assets/img/GeoGamification.png";
+import portfolio from "../assets/img/Portfolio.png";
 const projectsList = [
     {
       title: "Dentist-Website",
@@ -13,11 +16,29 @@ const projectsList = [
     {
       title: "PokeBattle",
       description: "A web application, login functionality & consumption PokeAPI, simulating type battles.",
-      imgUrl: projImg1,
+      imgUrl: pokebattle,
       tecn: ["Django", "Python","MySql","JavaScript"],
       urlGit: "https://github.com/carloserna12/PokeBattle",
       urlWeb: "",
       status: "DeployNot",
+    },
+    {
+      title: "Geogamification website",
+      description: "Gamified learning application for the Colombian departments.",
+      imgUrl: geogamification,
+      tecn: ["Django", "Python","MySql","JavaScript"],
+      urlGit: "https://github.com/carloserna12/Geofication-web",
+      urlWeb: "",
+      status: "DeployNot",
+    },
+    {
+      title: "My Portfolio Website",
+      description:"Personal portfolio website for free use showcasing my work and skills.",
+      imgUrl: portfolio,
+      tecn: ["React", "JavaScript","NodeJs"],
+      urlGit: "https://github.com/carloserna12/Portfolio",
+      urlWeb: "https://carlossernadevportfolio.netlify.app/",
+      status: "Deploy",
     },
     
   ];
