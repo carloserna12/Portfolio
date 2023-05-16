@@ -638,11 +638,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .tech-icon {
   margin-right: 4px;
-  width: 1em;
+  width: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5px;
+  padding-top: 3px;
+  background-color: #ffffffcf;
+  border-radius: 15px;
 }
 .tecn-container{
   display:flex;
@@ -667,5 +669,61 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .logo-CDev img{
   width: 40px;
+}
+
+
+.checkbox-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 1000px;
+  margin-bottom: 1.5rem !important;
+  margin: 0 auto;
+}
+.checkbox-item {
+  flex-basis: calc(14.2857% - 10px);
+  flex-grow: 1;
+  max-width: calc(14.2857% - 10px);
+}
+@media (max-width: 1000px) {
+  .checkbox-item {
+    flex-basis: calc(16.6% - 10px);
+    max-width: calc(16.6% - 10px);
+  }
+}
+@media (max-width: 850px) {
+  .checkbox-item {
+    flex-basis: calc(20% - 10px);
+    max-width: calc(20% - 10px);
+  }
+}
+@media (max-width: 750px) {
+  .checkbox-item {
+    flex-basis: calc(25% - 10px);
+    max-width: calc(25% - 10px);
+  }
+}
+@media (max-width: 650px) {
+  .checkbox-item {
+    flex-basis: calc(33% - 10px);
+    max-width: calc(33% - 10px);
+  }
+}
+
+
+
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  
+}
+.tech-icon-filter {
+  margin-right: 5px;
+  width: 20px; /* Establece el ancho del icono */
+  height: 20px; /* Establece la altura del icono */
+  margin-right: 5px;
 }
 
