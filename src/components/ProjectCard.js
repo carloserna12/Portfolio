@@ -5,7 +5,7 @@ import { faEarthAmerica } from "@fortawesome/free-solid-svg-icons";
 import icons from "./icons";
 export const ProjectCard = ({ title, description, imgUrl,tecn,urlGit,urlWeb,status }) => {
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col size={12} sm={6} md={4} style={{ marginBottom: '30px' }}>
       <div className="proj-imgbx">
         <img src={imgUrl} />
         <div className="proj-txtx">

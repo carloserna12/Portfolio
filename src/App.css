@@ -255,6 +255,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  
 }
 .banner p {
   color: #B8B8B8;
@@ -309,7 +310,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #1c247c;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 60px 100px;
   margin-top: -60px;
 }
 .skill h2 {
@@ -358,7 +359,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 100%;
 }
 .project .nav.nav-pills {
   width: 72%;
@@ -729,3 +730,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-right: 5px;
 }
 
+@media (max-width: 768px) {
+  .skill-bx {
+    padding: 30px 50px; /* Cambia el valor del padding para dispositivos móviles */
+  }
+}
+
+
+.container-project-card {
+  margin-bottom: 30px;
+}

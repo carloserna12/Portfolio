@@ -35,19 +35,10 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>About me</h2>
-                        <p>I am Carlos, a systems engineer and multimedia producer with a strong background in software development. As a passionate developer, I not only focus on writing clean and efficient code, but I also value the adoption of good programming practices.
-                        
-                        
-                        I have experience in implementing scalable and modularized architectures, allowing me to build robust and flexible systems. Additionally, I am familiar with a wide range of design patterns, enabling me to tackle complex problems in a structured and efficient manner.
+                        <p>I'm Carlos, a systems engineer and multimedia producer with experience in software development. I excel at applying best practices and building scalable and modular architectures. Additionally, I use effective design patterns to tackle problems in a structured manner.
                         </p>
-                        <p>
-                        I understand the importance of staying up to date with the latest trends and advancements in the software development industry. I am always seeking opportunities to enhance my skills and learn new technologies that can boost my abilities as a developer.
+                        <p> I stay updated with the latest trends and continuously seek opportunities to learn new technologies. My approach is centered around excellence, effective communication, and close collaboration to achieve exceptional results. If you're in need of a skilled and dedicated software developer, I'm ready to contribute to the success of your projects.</p>
                         
-                        I am committed to excellence and delivering quality solutions. I believe in effective communication, teamwork, and close collaboration with clients and colleagues to achieve exceptional results.
-                        </p>
-                        <p>
-                        If you are looking for someone who is a skilled software developer capable of applying best practices, implementing solid architectures, and utilizing effective design patterns, feel free to contact me. I am excited to take on new challenges and contribute to the success of your projects.
-                        </p>
                         {/*<Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
