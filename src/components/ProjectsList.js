@@ -3,6 +3,7 @@ import projImg_1 from "../assets/img/project-img-1.png";
 import pokebattle from "../assets/img/PokeBattle.png";
 import geogamification from "../assets/img/GeoGamification.png";
 import portfolio from "../assets/img/Portfolio.png";
+import usermanagemicroservice from "../assets/img/user.jpg";
 const projectsList = [
     {
       title: "Dentist-Website",
@@ -12,6 +13,24 @@ const projectsList = [
       urlGit: "https://github.com/carloserna12/Web-Dentista",
       urlWeb: "https://dralejandrorobles.netlify.app",
       status: "Deploy",
+    },
+    {
+      title: "My Portfolio Website",
+      description:"Personal portfolio website for free use showcasing my work and skills.",
+      imgUrl: portfolio,
+      tecn: ["React", "JavaScript","NodeJs"],
+      urlGit: "https://github.com/carloserna12/Portfolio",
+      urlWeb: "https://carlossernadevportfolio.netlify.app/",
+      status: "Deploy",
+    },
+    {
+      title: "User Management Microservice",
+      description:"Java with Spring Boot microservice creating an API using hexagonal architecture and JWT authentication.",
+      imgUrl: usermanagemicroservice,
+      tecn: ["Java", "Spring","MySql","Docker"],
+      urlGit: "https://github.com/carloserna12/User-Management-Microservice",
+      urlWeb: "",
+      status: "DeployNot",
     },
     {
       title: "PokeBattle",
@@ -31,15 +50,8 @@ const projectsList = [
       urlWeb: "",
       status: "DeployNot",
     },
-    {
-      title: "My Portfolio Website",
-      description:"Personal portfolio website for free use showcasing my work and skills.",
-      imgUrl: portfolio,
-      tecn: ["React", "JavaScript","NodeJs"],
-      urlGit: "https://github.com/carloserna12/Portfolio",
-      urlWeb: "https://carlossernadevportfolio.netlify.app/",
-      status: "Deploy",
-    },
+    
+    
     
   ];
 

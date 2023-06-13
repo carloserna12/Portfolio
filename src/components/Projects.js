@@ -59,21 +59,7 @@ export const Projects = () => {
                     projects I've been working on recently.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
-                      variant="pills"
-                      className="nav-pills mb-4 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">All Projects</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">In Production</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Rdy to deploy</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
+                    
 
                     <div className="checkbox-list">
                       {technologies.map((technology) => (

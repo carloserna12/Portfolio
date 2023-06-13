@@ -10,7 +10,6 @@ import colorSharp from "../assets/img/color-sharp.png"
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -39,24 +38,6 @@ export const Skills = () => {
                         </p>
                         <p> I stay updated with the latest trends and continuously seek opportunities to learn new technologies. My approach is centered around excellence, effective communication, and close collaboration to achieve exceptional results. If you're in need of a skilled and dedicated software developer, I'm ready to contribute to the success of your projects.</p>
                         
-                        {/*<Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Frontend Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Backend Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Software Development</h5>
-                            </div>
-  </Carousel>*/}
                     </div>
                 </div>
             </div>
