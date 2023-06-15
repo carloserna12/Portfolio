@@ -59,27 +59,31 @@ export const Projects = () => {
                     projects I've been working on recently.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    
-
                     <div className="checkbox-list">
-                      {technologies.map((technology) => (
-                        <div key={technology} className="checkbox-item">
-                          <label className="checkbox-label">
-                            <input
-                              type="checkbox"
-                              value={technology}
-                              checked={checkedItems.includes(technology)}
-                              onChange={handleCheckboxChange}
-                            />
-                            <img
-                              src={icons[technology]}
-                              alt={technology}
-                              className="tech-icon-filter"
-                            />
-                            {technology}
-                          </label>
-                        </div>
-                      ))}
+                      {projects
+                        .flatMap((project) => project.tecn)
+                        .filter(
+                          (technology, index, self) =>
+                            self.indexOf(technology) === index
+                        )
+                        .map((technology) => (
+                          <div key={technology} className="checkbox-item">
+                            <label className="checkbox-label">
+                              <input
+                                type="checkbox"
+                                value={technology}
+                                checked={checkedItems.includes(technology)}
+                                onChange={handleCheckboxChange}
+                              />
+                              <img
+                                src={icons[technology]}
+                                alt={technology}
+                                className="tech-icon-filter"
+                              />
+                              {technology}
+                            </label>
+                          </div>
+                        ))}
                     </div>
 
                     <Tab.Content
@@ -94,38 +98,6 @@ export const Projects = () => {
                             .filter(
                               (project) =>
                                 checkedItems.length === 0 ||
-                                checkedItems.every((item) =>
-                                  project.tecn.includes(item)
-                                )
-                            )
-                            .map((project, index) => (
-                              <ProjectCard key={index} {...project} />
-                            ))}
-                        </Row>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey="second">
-                        <Row>
-                          {projects
-                            .filter(
-                              (project) =>
-                                project.status === "Deploy" &&
-                                checkedItems.every((item) =>
-                                  project.tecn.includes(item)
-                                )
-                            )
-                            .map((project, index) => (
-                              <ProjectCard key={index} {...project} />
-                            ))}
-                        </Row>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey="third">
-                        <Row>
-                          {projects
-                            .filter(
-                              (project) =>
-                                project.status === "DeployNot" &&
                                 checkedItems.every((item) =>
                                   project.tecn.includes(item)
                                 )
